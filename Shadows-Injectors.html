@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows Injector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #cccccc;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 3px #cccccc;
+        }
+
+        .textbox {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #444;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            box-shadow: inset 0 0 5px #444;
+            font-size: 16px;
+            resize: none; /* Prevent resizing of the textarea */
+        }
+
+        .button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            text-shadow: 0 0 3px #4CAF50;
+            box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+            box-shadow: 0 0 20px rgba(69, 160, 73, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Shadows Injector</h1>
+        <textarea class="textbox" placeholder="Enter your code or message" rows="4"></textarea>
+        <button class="button">Execute</button>
+    </div>
+</body>
+</html>
